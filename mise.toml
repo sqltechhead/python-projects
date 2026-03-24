@@ -1,0 +1,12 @@
+[env]
+_.python.venv = { path = ".venv", create = true }
+
+[tools]
+python='3.13'
+uv = "latest"
+
+[tasks.sync]
+run = "uv sync"
+
+[tasks.add]
+run = "uv add {{ args }}"
